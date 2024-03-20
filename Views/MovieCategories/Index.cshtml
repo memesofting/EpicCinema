@@ -1,0 +1,15 @@
+﻿@using EpicCinema.Models;
+@model List<Category>
+
+<h2>
+	Movies Categories
+</h2>
+<br />
+<ul>
+	@foreach (var category in Model)
+	{
+		<li>
+			@category.Name
+		</li>
+	}
+</ul>
